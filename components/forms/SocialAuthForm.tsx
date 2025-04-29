@@ -1,9 +1,23 @@
 import React from 'react'
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
+import {toast} from "@/components/ui/sonner";
 
 const SocialAuthForm = () => {
-    const buttonClass = "background-dark400_light900 body-medium text-dark200_light800 min-h-12 flex-1 rounded-2 px-4 py-3.5"
+    const buttonClass = "background-dark400_light900 body-medium text-dark200_light800 min-h-12 flex-1 rounded-2 px-4 py-3.5";
+
+    // TODO : implement handle sign method
+    const handleSignIn = async (provider: "github" | "google") => {
+        try{
+
+        } catch (error){
+            console.error(error);
+            // TODO : implement toast
+            toast({
+
+            })
+        }
+    }
     return (
         <div className={'mt-10 flex flex-wrap gap-2'}>
             <Button className={buttonClass}>

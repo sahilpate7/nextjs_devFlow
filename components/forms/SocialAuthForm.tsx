@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { toast } from 'sonner'
 import ROUTES from '@/constants/routes'
 
-// Note: import from 'next-auth/react' for a client component and import from '@auth' for a server component
+// Note: import from 'next-auth/react' for a client component and import from '@auth' for a server component. Setup Google oAuth at https://console.cloud.google.com/. Setup GitHub oAuth at https://github.com/settings/developers
 
 const SocialAuthForm = () => {
   const buttonClass = 'background-dark400_light900 body-medium text-dark200_light800 min-h-12 flex-1 rounded-2 px-4 py-3.5 cursor-pointer'

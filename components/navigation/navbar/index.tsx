@@ -1,10 +1,11 @@
-import Link from 'next/link';
+import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image';
-import Theme from "@/components/navigation/navbar/Theme";
+import Image from 'next/image'
+import Theme from '@/components/navigation/navbar/Theme'
+import MobileNavigation from '@/components/navigation/navbar/MobileNavigation'
 
 const Navbar = () => {
-    return (
+  return (
         <nav className={'flex-between background-light900_dark200 fixed z-50 w-full p-6 shadow-light-300 dark:shadow-none sm:px-12'}>
             <Link href={'/'} className={'flex items-center gap-1'}>
                 <Image
@@ -19,9 +20,12 @@ const Navbar = () => {
             </Link>
 
             <p>Global search</p>
-            <div className={'flex-between gap-5'}><Theme /></div>
+            <div className={'flex-between gap-5'}>
+                <Theme />
+                <MobileNavigation />
+            </div>
         </nav>
-    )
+  )
 }
 
-export default Navbar;
+export default Navbar

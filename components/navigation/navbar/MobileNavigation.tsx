@@ -11,6 +11,7 @@ import {
 import Link from 'next/link'
 import ROUTES from '@/constants/routes'
 import { Button } from '@/components/ui/button'
+import NavLinks from '@/components/navigation/navbar/NavLinks'
 
 const MobileNavigation = () => {
   return (
@@ -39,8 +40,8 @@ const MobileNavigation = () => {
               </Link>
               <div className={'no-scrollbar flex h-[calc(100vh-80px)] flex-col justify-between overflow-y-auto'}>
                   <SheetClose asChild>
-                      <section className={'flex flex-col h-full gap-6 pt-16'}>
-                          <p>Nav Links</p>
+                      <section className={'flex flex-col h-full gap-4 pt-16'}>
+                          <NavLinks isMobileNav />
                       </section>
                   </SheetClose>
                   <div className={'flex flex-col gap-3'}>
